@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>Hello from Electron renderer!!!!!</title>
+  </head>
+  <body>
+      <h1>Lector de MarkDown</h1>    
+    <div>
+      <div id="editor"></div>
+      <div id="preview"></div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
